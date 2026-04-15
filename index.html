@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Entrepreneurs Assembly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="#" class="nav-logo">
+        <img src="./Assets/logo.png" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#community">E-Village</a></li>
+        <a href="https://entrepreneursassembly.com/donate/" class="nav-donate"
+          >Donate</a
+        >
+        <a
+          href="https://entrepreneursassembly.com/assembly-form/"
+          class="nav-cta"
+          >Join Assembly →</a
+        >
+      </ul>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-text fade-up">
+        <div class="hero-badge">Live Every Saturday</div>
+        <h1>Where <em>African</em> Entrepreneurs Connect &amp; Rise</h1>
+        <p>
+          A weekly gathering of ambitious entrepreneurs from across Africa and
+          the diaspora — collaborating, networking, and building the future
+          together. Every Saturday, 6PM GMT+1 on Zoom.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://entrepreneursassembly.com/assembly-form/"
+            class="btn-primary"
+            >Join the Assembly →</a
+          >
+          <a href="#mission" class="btn-secondary">Our Mission</a>
+        </div>
+      </div>
+
+      <div class="hero-right fade-up" style="transition-delay: 0.2s">
+        <div class="countdown-card">
+          <div class="label">Next Assembly Countdown</div>
+          <h2>Join Us This Saturday</h2>
+          <div class="next-date" id="next-date-text">
+            Loading next session date…
+          </div>
+          <div class="countdown-grid">
+            <div class="cd-box">
+              <div class="cd-num" id="cd-days">00</div>
+              <div class="cd-unit">Days</div>
+            </div>
+            <div class="cd-box">
+              <div class="cd-num" id="cd-hours">00</div>
+              <div class="cd-unit">Hours</div>
+            </div>
+            <div class="cd-box">
+              <div class="cd-num" id="cd-mins">00</div>
+              <div class="cd-unit">Mins</div>
+            </div>
+            <div class="cd-box">
+              <div class="cd-num" id="cd-secs">00</div>
+              <div class="cd-unit">Secs</div>
+            </div>
+          </div>
+          <a
+            href="https://entrepreneursassembly.com/assembly-form/"
+            class="join-btn"
+            >Click Here to Join the Assembly</a
+          >
+          <div class="event-meta">
+            <div class="event-row">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="color: rgba(255, 255, 255, 0.5)"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              <span>Every Saturday, 6:00 PM GMT+1</span>
+            </div>
+            <div class="event-row">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="color: rgba(255, 255, 255, 0.5)"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Zoom (Global) · Open to all entrepreneurs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS RIBBON -->
+    <div class="stats-ribbon fade-up">
+      <div class="stat-item">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">African Countries</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">12.6M+</div>
+        <div class="stat-label">Network Members</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Years Running</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Weekly</div>
+        <div class="stat-label">Every Saturday</div>
+      </div>
+    </div>
+
+    <!-- MISSION & VISION -->
+    <section class="mission" id="mission">
+      <div class="mission-grid">
+        <div class="mission-body fade-up">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">
+            Built for Entrepreneurs. By Entrepreneurs.
+          </h2>
+          <p>
+            The Entrepreneurs Assembly is a weekly virtual gathering powered by
+            Africa's Young Entrepreneurs (A.Y.E.) — a movement present in 20
+            African countries and across the diaspora in the US and UK.
+          </p>
+          <p>
+            Founded on the belief that limited capital and limited networks
+            shouldn't limit ambition, the Assembly exists to close those gaps —
+            one Saturday at a time.
+          </p>
+          <div class="mission-pillars">
+            <div class="pillar">
+              <h4>Collaborate</h4>
+              <p>
+                Work alongside entrepreneurs solving real problems across
+                Africa.
+              </p>
+            </div>
+            <div class="pillar">
+              <h4>Network</h4>
+              <p>
+                Connect with investors, mentors and peers spanning continents.
+              </p>
+            </div>
+            <div class="pillar">
+              <h4>Learn</h4>
+              <p>
+                Keynotes and fireside chats with world-class business leaders.
+              </p>
+            </div>
+            <div class="pillar">
+              <h4>Grow</h4>
+              <p>
+                Access grants, training, and platforms to scale your business.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up" style="transition-delay: 0.15s">
+          <div class="vision-block">
+            <div class="section-tag">Our Vision &amp; Mission</div>
+            <h2 class="section-title">
+              Empowering the Next Generation of African Leaders
+            </h2>
+            <p>
+              We are building a thriving African entrepreneurial ecosystem where
+              innovation, creativity, and collaboration fuel economic growth and
+              empower communities.
+            </p>
+            <ul class="vision-list">
+              <li>
+                Empower young Africans through entrepreneurship education and
+                mentorship
+              </li>
+              <li>
+                Provide access to resources that drive economic growth and
+                self-reliance
+              </li>
+              <li>
+                Build networks that link the diaspora with continental
+                investment opportunities
+              </li>
+              <li>
+                Showcase and support thousands of innovative businesses and
+                ideas
+              </li>
+              <li>Champion Africa as the future of global entrepreneurship</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="founder" id="founder">
+      <div class="founder-inner">
+        <div class="founder-visual fade-up">
+          <div class="founder-img-frame">
+            <img src="./Assets/Summy-Smart-Francis.jpg" alt="Dr. Summy Smart Francis" class="founder-image" />
+          </div>
+          <div class="founder-accent-box">
+            <div class="big-num">14</div>
+            <p>Age he started<br />his first business</p>
+          </div>
+        </div>
+        <div class="founder-content fade-up" style="transition-delay: 0.15s">
+          <div class="section-tag">The Founder</div>
+          <div class="founder-name">Dr. Summy Smart Francis</div>
+          <div class="founder-title">
+            President &amp; Founder · Africa's Young Entrepreneurs
+          </div>
+          <p class="founder-bio">
+            A South African-based Nigerian entrepreneur, Dr. Summy Smart Francis
+            started his first venture at age 14 at his father's hotel in Lagos.
+            At 17, he managed an entire hotel branch — developing the business
+            maturity and hunger that would shape his life's mission.
+          </p>
+          <p class="founder-bio">
+            Having personally experienced the barriers of limited capital and
+            networks, he channelled those struggles into building Africa's
+            largest entrepreneurship movement. Today he serves as Special
+            Adviser on Entrepreneurship &amp; Innovation to the Ondo State
+            Governor and is Chairman of ONDEA — Nigeria's first entrepreneurship
+            agency.
+          </p>
+          <p class="founder-bio">
+            A TEDx speaker, Harvard-trained, and holder of Nigeria's first
+            Honorary Doctorate in Entrepreneurship — Dr. Francis is widely known
+            as <em>"The Godfather of Entrepreneurship."</em>
+          </p>
+          <div class="founder-credentials">
+            <span class="cred-tag">Harvard University</span>
+            <span class="cred-tag">TEDx Speaker</span>
+            <span class="cred-tag">A.Y.E. Founder</span>
+            <span class="cred-tag">ONDEA Chairman</span>
+            <span class="cred-tag">SSF Investments</span>
+            <span class="cred-tag">Ondo State Adviser</span>
+            <span class="cred-tag">20 Countries</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAST ASSEMBLY VIDEOS -->
+    <section class="videos" id="videos">
+      <div class="videos-header fade-up">
+        <div>
+          <div class="section-tag">Past Assemblies</div>
+          <h2 class="section-title">Inspiring Voices, Timeless Insights</h2>
+        </div>
+        <a
+          href="https://entrepreneursassembly.com/past-assembly-video/"
+          class="view-all"
+          >View all sessions →</a
+        >
+      </div>
+      <div class="videos-grid">
+        <div class="video-card fade-up">
+          <div class="video-thumb">
+            <div class="video-thumb-bg"></div>
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-date">5 July 2025</div>
+            <div class="video-title">A Leader's Load</div>
+            <div class="video-speaker">Summy Smart Francis</div>
+          </div>
+        </div>
+        <div class="video-card fade-up" style="transition-delay: 0.1s">
+          <div class="video-thumb">
+            <div class="video-thumb-bg"></div>
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-date">14 June 2025</div>
+            <div class="video-title">
+              Why Every Leader Should Build a Personal Brand
+            </div>
+            <div class="video-speaker">Brilliant Liu</div>
+          </div>
+        </div>
+        <div class="video-card fade-up" style="transition-delay: 0.2s">
+          <div class="video-thumb">
+            <div class="video-thumb-bg"></div>
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-date">10 May 2025</div>
+            <div class="video-title">Release Your Brilliance</div>
+            <div class="video-speaker">Simon T. Bailey</div>
+          </div>
+        </div>
+        <div class="video-card fade-up" style="transition-delay: 0.05s">
+          <div class="video-thumb">
+            <div class="video-thumb-bg"></div>
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-date">8 Mar 2025</div>
+            <div class="video-title">Born to Lead</div>
+            <div class="video-speaker">Dr. Johnny Wimbrey</div>
+          </div>
+        </div>
+        <div class="video-card fade-up" style="transition-delay: 0.15s">
+          <div class="video-thumb">
+            <div class="video-thumb-bg"></div>
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-date">12 Apr 2025</div>
+            <div class="video-title">
+              From Pleaser to Power: Leading Without Losing Yourself
+            </div>
+            <div class="video-speaker">Adam Jablin</div>
+          </div>
+        </div>
+        <div class="video-card fade-up" style="transition-delay: 0.25s">
+          <div class="video-thumb">
+            <div class="video-thumb-bg"></div>
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-date">31 May 2025</div>
+            <div class="video-title">
+              From Hustle to Legacy: Building Purpose-Driven Brands
+            </div>
+            <div class="video-speaker">Brandi Harvey</div>
+          </div>
+        </div>
+      </div>
+      <div class="videos-footer fade-up">
+        <a
+          href="https://entrepreneursassembly.com/past-assembly-video/"
+          class="btn-primary"
+          >Browse All Assembly Videos →</a
+        >
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-header fade-up">
+        <div class="section-tag">Community Voices</div>
+        <h2 class="section-title">What Our Members Are Saying</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card fade-up">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">
+            The Entrepreneurs Assembly changed how I see collaboration. I've met
+            partners, investors, and mentors all from one weekly Zoom call. It's
+            not just a meeting — it's a movement.
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">AO</div>
+            <div>
+              <div class="testi-name">Adaeze Okonkwo</div>
+              <div class="testi-location">Lagos, Nigeria</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card fade-up" style="transition-delay: 0.1s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">
+            I joined from the UK and found my people. The diaspora connection to
+            Africa is real here. Every session brings world-class speakers and
+            genuine community spirit.
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">KM</div>
+            <div>
+              <div class="testi-name">Kwame Mensah</div>
+              <div class="testi-location">London, United Kingdom</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card fade-up" style="transition-delay: 0.2s">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">
+            Dr. Summy's vision is infectious. The assembly pushed me to finally
+            launch my startup. The support network here is unlike anything I've
+            experienced in any other platform.
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">TN</div>
+            <div>
+              <div class="testi-name">Thandiwe Nkosi</div>
+              <div class="testi-location">Johannesburg, South Africa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E-VILLAGE -->
+    <section class="evillage" id="community">
+      <div class="evillage-inner">
+        <div class="evillage-content fade-up">
+          <div class="section-tag">E-Village</div>
+          <h2 class="section-title">Africa's First Entrepreneurship Village</h2>
+          <p>
+            The Entrepreneurship Village in Akure, Ondo State, Nigeria is a
+            first-of-its-kind hub — Africa's Silicon Valley — designed to
+            nurture, accelerate, and connect the next wave of African
+            entrepreneurs.
+          </p>
+          <div class="evillage-features">
+            <div class="feature-row">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Physical Innovation Hub</h4>
+                <p>
+                  Co-working, incubation, and acceleration facilities in Akure,
+                  Nigeria.
+                </p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Mentorship Network</h4>
+                <p>
+                  Direct access to experienced entrepreneurs, investors, and
+                  industry experts.
+                </p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Global Community</h4>
+                <p>
+                  Part of the A.Y.E. network spanning 20 African countries plus
+                  the US and UK.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            href="https://entrepreneurshipvillage.com/"
+            class="btn-primary"
+            target="_blank"
+            >Explore E-Village →</a
+          >
+        </div>
+        <div class="evillage-visual fade-up" style="transition-delay: 0.15s">
+          <h3>The Entrepreneurship Village</h3>
+          <p>
+            Africa's first dedicated entrepreneurship village — a living,
+            breathing ecosystem where ideas become enterprises and entrepreneurs
+            become leaders.
+          </p>
+          <div class="evillage-stats">
+            <div class="ev-stat">
+              <div class="ev-stat-num">20+</div>
+              <div class="ev-stat-label">Countries Connected</div>
+            </div>
+            <div class="ev-stat">
+              <div class="ev-stat-num">12.6M</div>
+              <div class="ev-stat-label">Network Members</div>
+            </div>
+            <div class="ev-stat">
+              <div class="ev-stat-num">1st</div>
+              <div class="ev-stat-label">In Africa</div>
+            </div>
+            <div class="ev-stat">
+              <div class="ev-stat-num">1000s</div>
+              <div class="ev-stat-label">Grants Awarded</div>
+            </div>
+          </div>
+          <a
+            href="https://entrepreneurshipvillage.com/"
+            class="join-btn"
+            target="_blank"
+            >Visit E-Village</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATE CTA -->
+    <section class="donate" id="donate">
+      <div class="donate-inner fade-up">
+        <div class="donate-text">
+          <div class="section-tag">Support the Movement</div>
+          <h2>Help Us Empower the Next Generation of African Entrepreneurs</h2>
+          <p>
+            Your donation directly funds grants for innovative businesses,
+            mentorship programmes, and the infrastructure that keeps this weekly
+            assembly running for entrepreneurs across 20 countries. Every
+            contribution matters.
+          </p>
+        </div>
+        <div class="donate-action">
+          <a href="https://entrepreneursassembly.com/donate/" class="donate-btn"
+            >♥ Donate Now</a
+          >
+          <div class="donate-note">
+            100% goes toward<br />entrepreneurship development
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <img src="./Assets/logo.png" />
+          </div>
+          <p>
+            A weekly assembly to collaborate, network and connect with
+            entrepreneurs all over the world. Every Saturday, 6PM GMT+1 on Zoom.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#mission">Mission &amp; Vision</a></li>
+            <li><a href="#founder">About the Founder</a></li>
+            <li><a href="#videos">Assembly Videos</a></li>
+            <li><a href="#community">E-Village</a></li>
+            <li><a href="#donate">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Platforms</h4>
+          <ul>
+            <li>
+              <a href="https://ayeorganization.com/" target="_blank"
+                >A.Y.E. Organization</a
+              >
+            </li>
+            <li>
+              <a href="https://entrepreneurshipvillage.com/" target="_blank"
+                >E-Village</a
+              >
+            </li>
+            <li>
+              <a href="https://summysmartfrancis.com/" target="_blank"
+                >Dr. Summy Smart Francis</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://entrepreneursassembly.com/past-assembly-video/"
+                target="_blank"
+                >Past Videos</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:info@ayeorganization.com"
+                >info@ayeorganization.com</a
+              >
+            </li>
+            <li><a href="tel:+2348135588009">(+234) 813 558 8009</a></li>
+            <li><a href="#">Akure, Ondo State, Nigeria</a></li>
+            <li>
+              <a
+                href="https://entrepreneursassembly.com/assembly-form/"
+                target="_blank"
+                >Join the Assembly</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2026 The Entrepreneurs Assembly · Part of
+          <a href="https://ayeorganization.com/"
+            >Africa's Young Entrepreneurs (A.Y.E.)</a
+          >
+        </p>
+        <p>Built for the <a href="#">African Entrepreneurship Movement</a></p>
+      </div>
+    </footer>
+
+    <script>
+      // NAV scroll effect
+      window.addEventListener("scroll", () => {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+      // COUNTDOWN — next Saturday at 6PM GMT+1 (UTC+1 = offset 60)
+      function getNextSaturday6PM() {
+        const now = new Date();
+        const nowUTC = now.getTime() + now.getTimezoneOffset() * 60000;
+        const gmtPlus1 = new Date(nowUTC + 3600000);
+        const day = gmtPlus1.getDay();
+        const daysUntilSat = (6 - day + 7) % 7 || 7;
+        const nextSat = new Date(gmtPlus1);
+        nextSat.setDate(gmtPlus1.getDate() + daysUntilSat);
+        nextSat.setHours(18, 0, 0, 0);
+        return new Date(nextSat.getTime() - 3600000); // back to UTC
+      }
+
+      function updateCountdown() {
+        const target = getNextSaturday6PM();
+        const now = new Date();
+        const diff = target - now;
+        if (diff <= 0) {
+          document.getElementById("cd-days").textContent = "00";
+          document.getElementById("cd-hours").textContent = "00";
+          document.getElementById("cd-mins").textContent = "00";
+          document.getElementById("cd-secs").textContent = "00";
+          return;
+        }
+        const d = Math.floor(diff / 86400000);
+        const h = Math.floor((diff % 86400000) / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        document.getElementById("cd-days").textContent = String(d).padStart(
+          2,
+          "0",
+        );
+        document.getElementById("cd-hours").textContent = String(h).padStart(
+          2,
+          "0",
+        );
+        document.getElementById("cd-mins").textContent = String(m).padStart(
+          2,
+          "0",
+        );
+        document.getElementById("cd-secs").textContent = String(s).padStart(
+          2,
+          "0",
+        );
+        // Date text
+        const opts = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        const satDate = new Date(target.getTime() + 3600000);
+        document.getElementById("next-date-text").textContent =
+          `Next Assembly: ${satDate.toLocaleDateString("en-GB", opts)} at 6:00 PM (GMT+1)`;
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // FADE-IN on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".fade-up")
+        .forEach((el) => observer.observe(el));
+
+      // Mobile menu
+      function toggleMobileMenu() {
+        const links = document.querySelector(".nav-links");
+        if (!links) return;
+        links.style.display = links.style.display === "flex" ? "none" : "flex";
+        links.style.flexDirection = "column";
+        links.style.position = "fixed";
+        links.style.top = "72px";
+        links.style.left = "0";
+        links.style.right = "0";
+        links.style.background = "white";
+        links.style.padding = "2rem 5vw";
+        links.style.borderBottom = "1px solid rgba(2,23,75,0.1)";
+        links.style.gap = "1.5rem";
+        links.style.zIndex = "99";
+        links.style.boxShadow = "0 8px 32px rgba(2,23,75,0.1)";
+      }
+    </script>
+  </body>
+</html>
